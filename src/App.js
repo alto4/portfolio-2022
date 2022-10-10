@@ -11,10 +11,9 @@ import axios from 'axios';
 
 function App() {
   const getInquiries = async () => {
-    const res = await axios.get('https://portfolio-api-ss1a.onrender.com/contact');
+    const res = await axios.get('http://portfolio-api-ss1a.onrender.com/contact');
 
-    // const res = await axios.get('http://localhost:8000/contact');
-    //
+    // const res = await axios.get('https://portfolio-api-ss1a.onrender.com/contact');
     console.log('res => ', res);
   };
 
