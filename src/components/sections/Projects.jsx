@@ -3,7 +3,7 @@ import projectImage from '../../assets/images/project-placeholder.jpg';
 
 const Projects = () => {
   return (
-    <section className='row projects'>
+    <section className='row projects' id='projects'>
       <div className='project-card'>
         <img className='project-img' src={projectImage} alt='project' />
         <h3>Music Recorder</h3>

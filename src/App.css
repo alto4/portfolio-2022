@@ -8,7 +8,7 @@
 }
 
 body {
-  background: rgba(0,0,0, .98);
+  background: rgba(0,0,0, .95);
   color: #FFF;
   font-family: 'Epilogue', sans-serif;
 }
@@ -38,7 +38,7 @@ p {
   display: flex;
   position: fixed;
   width: 100%;
-  background-color: #000;
+  background: rgba(0,0,0, .95);
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem;
@@ -53,6 +53,7 @@ p {
 .nav-link {
   padding: 0 1rem;
   font-size: 20px;
+  color: #FFF;
 }
 
 .logo {
@@ -184,6 +185,11 @@ section .content {
 /* Contact Section */
 .contact label {
   font-size: 1.5rem;
+}
+
+.contact .success-message {
+ font-size: 1.3rem;
+  text-align: center;
 }
 
 .contact input,

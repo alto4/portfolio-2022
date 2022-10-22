@@ -1,17 +1,28 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
   return (
-    <nav className='navbar'>
-      <div>
-        <span className='logo'>*S/A*</span>
-      </div>
-      <ul className='nav-links'>
-        <li className='nav-link'>Projects</li>
-        <li className='nav-link'>About</li>
-        <li className='nav-link'>Contact</li>
-      </ul>
-    </nav>
+    <Router>
+      <nav className='navbar'>
+        <div>
+          <span className='logo'>*S/A*</span>
+        </div>
+
+        <ul className='nav-links'>
+          <HashLink smooth to='#projects' className='nav-link'>
+            Projects
+          </HashLink>
+          <HashLink smooth to='#about' className='nav-link'>
+            About
+          </HashLink>
+          <HashLink smooth to='#contact' className='nav-link'>
+            Contact
+          </HashLink>
+        </ul>
+      </nav>
+    </Router>
   );
 };
 
