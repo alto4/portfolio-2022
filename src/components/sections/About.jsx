@@ -9,7 +9,8 @@ const About = () => {
           <span className='separator'>*</span>
           <span className='sub'>Overview</span>
           I'm a web developer, musician, and teacher from Whitby, Ontario CA. I've been coding for about 3 years and 3
-          months and currently work as a full-stack developer at Trellis.
+          months and currently work as a full-stack developer at Trellis where I spend most of my time building out
+          data-driven dashboards.
         </p>
         <p>
           <span className='separator'>*</span>

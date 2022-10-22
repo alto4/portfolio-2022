@@ -9,6 +9,7 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [showErrors, setShowErrors] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     if (successMessage) {
@@ -51,9 +52,9 @@ const Contact = () => {
   };
 
   const onSubmit = async () => {
-    debugger;
     let validFormData = validate();
     if (validFormData) {
+      setSubmitting(true);
       await axios.post('https://portfolio-api-ss1a.onrender.com/contact', {
         name: name,
         email: email,
@@ -61,6 +62,7 @@ const Contact = () => {
       });
       clear();
       setSuccessMessage('Thank you for the inquiry. I will get back to you ASAP.');
+      setSubmitting(false);
     }
   };
 
@@ -94,8 +96,10 @@ const Contact = () => {
               e.preventDefault();
               onSubmit();
             }}
+            disabled={submitting}
+            style={{ cursor: 'pointer', pointerEvents: submitting ? 'none' : 'inherit' }}
           >
-            Send
+            {submitting ? 'Submitting' : 'Send'}
           </button>
           {successMessage && <p className='success-message'>{successMessage}</p>}
         </form>
