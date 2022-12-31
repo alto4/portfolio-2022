@@ -91,7 +91,7 @@ p {
 
 .project-card img {
   max-width: 100%;
-  height: 550px;
+  height: 300px;
   border-radius: 5px;
   filter: brightness(70%);
   transition: all .7s ease;
@@ -112,6 +112,16 @@ p {
   color: #B0B0B0;
   font-weight: 400;
   font-size: 1.15rem;
+}
+
+.project-technologies {
+  margin-top: 1rem;
+}
+
+.technology-icon {
+  color: #FFF;
+  padding-right: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .separator {

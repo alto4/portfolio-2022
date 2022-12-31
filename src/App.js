@@ -4,7 +4,7 @@ import Navbar from './components/layout/Navbar';
 import About from './components/sections/About';
 import Contact from './components/sections/Contact';
 import Hero from './components/sections/Hero';
-import Projects from './components/sections/Projects';
+import ProjectsList from './components/sections/projects/ProjectsList'
 import Skills from './components/sections/Skills';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <div className='container'>
         <Hero />
-        <Projects />
+       <ProjectsList />
         <About />
         <Skills />
         <Contact />
